@@ -1,8 +1,6 @@
 # elasticsearch
 
-
-
-# installlation
+# installation
 
 https://www.elastic.co/docs/deploy-manage/deploy/self-managed/install-elasticsearch-docker-compose
 
@@ -17,3 +15,12 @@ https://github.com/elastic/elasticsearch/blob/main/docs/reference/setup/install/
 docker-compose up -d
 
 docker-compose down
+
+# Links
+
+kibana
+
+http://localhost:5601
+
+username : elastic
+password : 1234556
