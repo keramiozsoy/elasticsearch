@@ -1,8 +1,10 @@
 # create api key
 
+<https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-security-create-api-key-1>
+
 <https://www.elastic.co/docs/api/doc/elasticsearch/authentication>
 
-We would like top use ApiKey instead of username:password
+We would like to use ApiKey instead of username:password
 
 You can genereate from browser or terminal.
 
@@ -31,25 +33,24 @@ curl -k -u elastic:123456 -X POST https://localhost:9200/_security/api_key \
         "index": [
           {
             "names": ["*"],
-            "privileges": ["read", "write"]
+            "privileges": ["read", "write", "create_index"]
           }
         ]
       }
     }
   }'
-
 ```
 
 Response
 
 ```SHELL
 {
-    "id": "JGV0u5YBpXQZnHRYWDxh",
+    "id": "KGU5vJYBpXQZnHRYTDwI",
     "name": "my-api-key",
-    "expiration": 1746988086389,
-    "api_key": "lhqUWj2tapsIE-PUeF3x1g",
-    "encoded": "SkdWMHU1WUJwWFFabkhSWVdEeGg6bGhxVVdqMnRhcHNJRS1QVWVGM3gxZw=="
-}
+    "expiration": 1747000993800,
+    "api_key": "EMJTLHfLpcboKTC2qZkDAw",
+    "encoded": "S0dVNXZKWUJwWFFabkhSWVREd0k6RU1KVExIZkxwY2JvS1RDMnFaa0RBdw=="
+}%
 ```
 
 We can use encoded field for ApiKey.
@@ -57,7 +58,7 @@ We can use encoded field for ApiKey.
 Request
 
 ```SHELL
-curl -k --request GET 'https://localhost:9200/_health_report' --header 'Authorization: ApiKey SkdWMHU1WUJwWFFabkhSWVdEeGg6bGhxVVdqMnRhcHNJRS1QVWVGM3gxZw=='
+curl -k --request GET 'https://localhost:9200/_health_report' --header 'Authorization: ApiKey S0dVNXZKWUJwWFFabkhSWVREd0k6RU1KVExIZkxwY2JvS1RDMnFaa0RBdw=='
 ```
 
 Response
