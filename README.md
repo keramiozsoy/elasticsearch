@@ -1,21 +1,5 @@
 # elasticsearch
 
-# installation
-
-https://www.elastic.co/docs/deploy-manage/deploy/self-managed/install-elasticsearch-docker-compose
-
-
-# docker compose files
-https://github.com/elastic/elasticsearch/blob/main/docs/reference/setup/install/docker/docker-compose.yml
-
-https://github.com/elastic/elasticsearch/blob/main/docs/reference/setup/install/docker/.env
-
-# start stop
-
-docker-compose up -d
-
-docker-compose down
-
 # Links
 
 kibana
@@ -24,3 +8,16 @@ http://localhost:5601
 
 username : elastic
 password : 1234556
+
+
+# Docs
+
+<https://www.elastic.co/docs/reference/elasticsearch/clients/java/getting-started>
+
+<https://www.elastic.co/docs/reference/elasticsearch/clients/python/getting-started>
+
+<https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-indices-create>
+
+Open console
+
+<http://localhost:5601/app/dev_tools>
