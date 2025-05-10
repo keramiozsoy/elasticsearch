@@ -27,22 +27,6 @@ KIBANA_PASSWORD=123456
 
 STACK_VERSION=9.0.0
 
-### docker-compose
-
-es01:
-
-- xpack.security.http.ssl.enabled=false
-
-es02:
-
-- xpack.security.http.ssl.enabled=false
-
-es03:
-
-- xpack.security.http.ssl.enabled=false
-
-
-
 ## start stop
 
 ```SHELL
@@ -65,13 +49,10 @@ docker-compose down -v  # To delete the network, containers, and volumes when yo
 Request
 
 ```SHELL
-
-curl -u elastic:123456 http://localhost:9200
-
+curl -k -u elastic:123456 https://localhost:9200
 ```
 
 Reponse
-
 
 ```JSON
 {
