@@ -33,7 +33,7 @@ curl -k -u elastic:123456 -X POST https://localhost:9200/_security/api_key \
         "index": [
           {
             "names": ["*"],
-            "privileges": ["read", "write", "create_index"]
+            "privileges": ["read", "write", "create_index","manage"]
           }
         ]
       }
@@ -45,13 +45,14 @@ Response
 
 ```SHELL
 {
-    "id": "KGU5vJYBpXQZnHRYTDwI",
+    "id": "LWWKvJYBpXQZnHRYyDwM",
     "name": "my-api-key",
-    "expiration": 1747000993800,
-    "api_key": "EMJTLHfLpcboKTC2qZkDAw",
-    "encoded": "S0dVNXZKWUJwWFFabkhSWVREd0k6RU1KVExIZkxwY2JvS1RDMnFaa0RBdw=="
-}%
+    "api_key": "Xq6To1qDgsVOUkYOX_LJQA",
+    "encoded": "TFdXS3ZKWUJwWFFabkhSWXlEd006WHE2VG8xcURnc1ZPVWtZT1hfTEpRQQ=="
+}
 ```
+
+
 
 We can use encoded field for ApiKey.
 
