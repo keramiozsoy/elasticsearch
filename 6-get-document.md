@@ -8,6 +8,8 @@ UI
 
 <http://localhost:5601/app/management/data/index_management>
 
+## get document with id
+
 Find id=1 the document
 
 Request

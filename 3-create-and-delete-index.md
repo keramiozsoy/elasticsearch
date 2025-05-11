@@ -1,5 +1,11 @@
 # create an index
 
+GUIDES
+
+<https://www.elastic.co/docs/reference/elasticsearch/index-settings/index-modules#index-number-of-shards>
+
+<https://www.elastic.co/docs/reference/elasticsearch/index-settings/index-modules#index-number-of-shards>
+
 API
 
 <https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-indices-create>
@@ -50,4 +56,25 @@ Response
     "shards_acknowledged": true,
     "index": "my_index"
 }
+```
+
+
+
+## delete index
+
+Request
+
+```SHELL
+
+curl -k --request DELETE 'https://localhost:9200/my_index' \
+--header 'Authorization: ApiKey Tnk4eXY1WUJ0UFFpZ3FpcW9XX3U6eFludzd2VENrOUtnV1VvMXZWNFhYdw=='
+
+```
+
+Response 
+
+```JSON
+
+{"acknowledged":true}
+
 ```

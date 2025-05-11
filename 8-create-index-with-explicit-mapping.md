@@ -15,6 +15,9 @@ API
 
 <https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-indices-create>
 
+## create
+
+Request
 
 ```SHELL
 
@@ -24,9 +27,11 @@ curl -k --request PUT 'https://localhost:9200/my_index_with_explicit_mapping' \
 --data '{
     "mappings": {
         "properties": {
-            "age":    { "type": "integer" },
-            "email":  { "type": "keyword"  },
-            "name":   { "type": "text"  }
+            "book_price":    { "type": "float" },
+            "contact_email":  { "type": "keyword"  },
+            "book_name":   { "type": "text"  },
+            "book_publish_date":   { "type": "date"  },
+            "book_is_available":   { "type": "boolean"  }
         }
     },
     "settings": {
@@ -36,7 +41,6 @@ curl -k --request PUT 'https://localhost:9200/my_index_with_explicit_mapping' \
 }'
 
 ```
-
 
 Response
 
@@ -48,10 +52,9 @@ Response
 }
 ```
 
+## get index info
 
-
-## Get Index Info
-
+Request
 
 ```SHELL
 
@@ -60,20 +63,29 @@ curl -k --request GET 'https://localhost:9200/my_index_with_explicit_mapping' \
 
 ```
 
+Response
+
 ```JSON
+
 {
     "my_index_with_explicit_mapping": {
         "aliases": {},
         "mappings": {
             "properties": {
-                "age": {
-                    "type": "integer"
+                "book_is_available": {
+                    "type": "boolean"
                 },
-                "email": {
-                    "type": "keyword"
-                },
-                "name": {
+                "book_name": {
                     "type": "text"
+                },
+                "book_price": {
+                    "type": "float"
+                },
+                "book_publish_date": {
+                    "type": "date"
+                },
+                "contact_email": {
+                    "type": "keyword"
                 }
             }
         },
@@ -88,9 +100,9 @@ curl -k --request GET 'https://localhost:9200/my_index_with_explicit_mapping' \
                 },
                 "number_of_shards": "3",
                 "provided_name": "my_index_with_explicit_mapping",
-                "creation_date": "1746964522597",
+                "creation_date": "1746965521501",
                 "number_of_replicas": "2",
-                "uuid": "JYArE63KQYeATaqp3HKUdA",
+                "uuid": "DmrYXEaNQtana0MNqQYeGw",
                 "version": {
                     "created": "9009000"
                 }
@@ -100,4 +112,3 @@ curl -k --request GET 'https://localhost:9200/my_index_with_explicit_mapping' \
 }
 
 ```
-
