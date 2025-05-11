@@ -26,7 +26,6 @@ For fault tolerance and high availability, an index can have replica shards, whi
 
 number_of_replicas -> how many copies of the data, if one data is loss, system can continue to response. It provides resiliance and durability
 
-
 Let's create index named "my_index"
 
 Request

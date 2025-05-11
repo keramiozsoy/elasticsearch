@@ -16,8 +16,7 @@ DATA TYPE
 
 <https://www.elastic.co/docs/reference/elasticsearch/mapping-reference/text>
 
-
-Get data structure of my_index.
+Get data structure of "my_index"
 
 ```JSON
 

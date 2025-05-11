@@ -1,28 +1,24 @@
 # elasticsearch
 
+<https://www.elastic.co/docs/get-started>
 
-- installation
-- create-api-key
-- create-index
+Open console
+
+<http://localhost:5601/app/dev_tools>
+
 
 ## Links
 
-kibana
+kibana ui
 
-http://localhost:5601
+<http://localhost:5601>
 
 username : elastic
 password : 1234556
 
 
-## Docs
+## Clients
 
 <https://www.elastic.co/docs/reference/elasticsearch/clients/java/getting-started>
 
 <https://www.elastic.co/docs/reference/elasticsearch/clients/python/getting-started>
-
-<https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-indices-create>
-
-Open console
-
-<http://localhost:5601/app/dev_tools>
