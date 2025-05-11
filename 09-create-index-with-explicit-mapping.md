@@ -22,7 +22,7 @@ Request
 ```SHELL
 
 curl -k --request PUT 'https://localhost:9200/my_index_with_explicit_mapping' \
---header 'Authorization: ApiKey Tnk4eXY1WUJ0UFFpZ3FpcW9XX3U6eFludzd2VENrOUtnV1VvMXZWNFhYdw==' \
+--header 'Authorization: ApiKey YOUR_API_KEY' \
 --header 'Content-Type: application/json' \
 --data '{
     "mappings": {

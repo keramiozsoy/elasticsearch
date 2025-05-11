@@ -1,4 +1,3 @@
-
 # insert document with explicit mapping
 
 # get index mappping
@@ -7,7 +6,7 @@ Request
 
 ```SHELL
 curl -k --request GET 'https://localhost:9200/my_index_with_explicit_mapping/_mapping' \
---header 'Authorization: ApiKey Tnk4eXY1WUJ0UFFpZ3FpcW9XX3U6eFludzd2VENrOUtnV1VvMXZWNFhYdw=='
+--header 'Authorization: ApiKey YOUR_API_KEY'
 ```
 
 Response 

@@ -1,4 +1,4 @@
-# get document
+# get document by its id
 
 API
 
@@ -16,7 +16,7 @@ Request
 
 ```SHELL
 curl -k --request GET 'https://localhost:9200/my_index/_doc/1' \
---header 'Authorization: ApiKey S0dVNXZKWUJwWFFabkhSWVREd0k6RU1KVExIZkxwY2JvS1RDMnFaa0RBdw=='
+--header 'Authorization: ApiKey YOUR_API_KEY'
 ```
 
 Response

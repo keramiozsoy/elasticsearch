@@ -1,4 +1,4 @@
-# insert document
+# insert document without id
 
 API
 
@@ -8,17 +8,17 @@ DOC
 
 <https://www.elastic.co/docs/api/doc/elasticsearch/operation/operation-create>
 
-Let's create id = 1 document on my_index.
+Let's create a document without id on "my_index"
 
 Request
 
 ```SHELL
-curl -k --request PUT 'https://localhost:9200/my_index/_doc/1' \
---header 'Authorization: ApiKey S0dVNXZKWUJwWFFabkhSWVREd0k6RU1KVExIZkxwY2JvS1RDMnFaa0RBdw==' \
+curl -k --request POST 'https://localhost:9200/my_index/_doc' \
+--header 'Authorization: ApiKey YOUR_API_KEY' \
 --header 'Content-Type: application/json' \
 --data '{
-    "title": "Document with ID 1",
-    "content": "This one has a manually set ID."
+    "title": "Document with random id",
+    "content": "Document random content"
 }'
 ```
 
@@ -27,7 +27,7 @@ Response
 ```JSON
 {
     "_index": "my_index",
-    "_id": "1",
+    "_id": "Oi9Zv5YBtPQigqiqRm9G",
     "_version": 1,
     "result": "created",
     "_shards": {
@@ -35,7 +35,7 @@ Response
         "successful": 3,
         "failed": 0
     },
-    "_seq_no": 0,
+    "_seq_no": 1,
     "_primary_term": 1
-}
+}%
 ```

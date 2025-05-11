@@ -29,7 +29,7 @@ Get data structure of "my_index"
 
 ```SHELL
 curl -k --request GET 'https://localhost:9200/my_index/_mapping' \
---header 'Authorization: ApiKey TFdXS3ZKWUJwWFFabkhSWXlEd006WHE2VG8xcURnc1ZPVWtZT1hfTEpRQQ=='
+--header 'Authorization: ApiKey YOUR_API_KEY'
 ```
 
 Response
