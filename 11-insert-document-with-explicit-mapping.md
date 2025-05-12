@@ -1,8 +1,8 @@
 # insert document with explicit mapping
 
-# get index mappping
+## get index mappping
 
-Request 
+Request
 
 ```SHELL
 curl -k --request GET 'https://localhost:9200/my_index_with_explicit_mapping/_mapping' \
@@ -43,7 +43,7 @@ Request
 
 ```SHELL
 curl -k --request PUT 'https://localhost:9200/my_index_with_explicit_mapping/_doc/1' \
---header 'Authorization: ApiKey Tnk4eXY1WUJ0UFFpZ3FpcW9XX3U6eFludzd2VENrOUtnV1VvMXZWNFhYdw==' \
+--header 'Authorization: ApiKey YOUR_API_KEY' \
 --header 'Content-Type: application/json' \
 --data '{
     "book_is_available": true,

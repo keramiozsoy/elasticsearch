@@ -7,5 +7,3 @@
 <https://www.elastic.co/docs/reference/elasticsearch/mapping-reference/nested>
 
 <https://www.elastic.co/docs/reference/elasticsearch/mapping-reference/flattened>
-
-
