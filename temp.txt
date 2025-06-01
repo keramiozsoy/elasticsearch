@@ -1,7 +1,8 @@
 - MultiSearchRequest.java
 
 
-- QueryBuilders.java ( boolQuery(), termsQuery())
+https://www.elastic.co/guide/en/elasticsearch/client/java-rest/current/java-rest-high-query-builders.html
+- QueryBuilders.java ( boolQuery(), termsQuery(), matchQuery(), rangeQuery())
 - QueryBilder.java
 - BoolQueryBuilder.java
 - DistMaxQueryBuilder.java
