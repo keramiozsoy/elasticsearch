@@ -1,1 +1,7 @@
 - MultiSearchRequest.java
+
+
+- QueryBuilders.java ( boolQuery(), termsQuery())
+- QueryBilder.java
+- BoolQueryBuilder.java
+
