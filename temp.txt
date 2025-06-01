@@ -5,4 +5,6 @@
 - QueryBilder.java
 - BoolQueryBuilder.java
 - DistMaxQueryBuilder.java
+- RequestOptions.java
+- org.elasticsearch.clint.RestClient.java
 
