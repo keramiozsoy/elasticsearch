@@ -6,5 +6,6 @@
 - BoolQueryBuilder.java
 - DistMaxQueryBuilder.java
 - RequestOptions.java
-- org.elasticsearch.clint.RestClient.java
+- org.elasticsearch.client.RestClient.java
+- org.elasticsearch.client.RestHighLevelClient.java
 
