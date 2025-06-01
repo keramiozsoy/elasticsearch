@@ -4,4 +4,5 @@
 - QueryBuilders.java ( boolQuery(), termsQuery())
 - QueryBilder.java
 - BoolQueryBuilder.java
+- DistMaxQueryBuilder.java
 
